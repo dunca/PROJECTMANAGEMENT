@@ -21,7 +21,7 @@ namespace ProjectManagement.Controllers
 
         public ActionResult HelloUser(string alpha)
         {
-            return Content($"Hello {alpha}");
+            return Content($"Hello {Server.HtmlEncode(alpha)}");
         }
     }
 }

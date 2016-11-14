@@ -15,8 +15,8 @@ namespace ProjectManagement
 
             routes.MapRoute(
                 name: "Project", 
-                url: "Project/doanaction", 
-                defaults: new { controller = "Project", action = "doanaction", name = UrlParameter.Optional }
+                url: "Project/DoAnAction", 
+                defaults: new { controller = "Project", action = "DoAnAction", name = UrlParameter.Optional }
                 );
 
             routes.MapRoute(

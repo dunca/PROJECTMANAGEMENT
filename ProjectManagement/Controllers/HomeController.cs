@@ -32,8 +32,16 @@ namespace ProjectManagement.Controllers
 
         public double CalcAverage()
         {
-            var list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            return list.Average();
+            var list = new List<int>() { 1, 3, 7 };
+            //return list.Average();
+
+            double sum = 0;
+            foreach (var x in list)
+            {
+                sum += x;
+            }
+
+            return sum / list.Count;
         }
     }
 }

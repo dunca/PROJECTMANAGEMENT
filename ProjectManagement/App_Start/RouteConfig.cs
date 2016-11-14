@@ -20,6 +20,12 @@ namespace ProjectManagement
                 );
 
             routes.MapRoute(
+                name: "Project2",
+                url: "Project/{alpha}",
+                defaults: new { controller = "Project", action = "HelloUser", alpha = UrlParameter.Optional }
+                );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

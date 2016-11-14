@@ -43,5 +43,10 @@ namespace ProjectManagement.Controllers
 
             return sum / list.Count;
         }
+
+        public ActionResult HelloWorld()
+        {
+            return Content("Hello World!");
+        }
     }
 }
